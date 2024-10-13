@@ -116,6 +116,16 @@
           ]
         },
         {
+          "id": "generated.fabricmod:fabric-api:0.102.0+1.21@jar",
+          "name": "Fabric API",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2285859,
+            "url": "https://endlessodyssey-91a5c.web.app/host/servers/McOdyssey-1.21/fabricmods/required/fabric-api-0.102.0+1.21.jar",
+            "MD5": "3cbfc1a4a3776cc2ba74155150a28394"
+          }
+        },
+        {
           "id": "journeymap:journeymap:1.21-6.0.0-beta.7@jar",
           "name": "Journeymap",
           "type": "FabricMod",
