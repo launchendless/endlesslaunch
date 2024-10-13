@@ -11,7 +11,7 @@
       "id": "McOdyssey-1.21",
       "name": "McOdyssey (Minecraft 1.21)",
       "description": "McOdyssey Running Minecraft 1.21 (Fabric v0.16.7)",
-      "icon": null,
+      "icon": "https://launchendless.github.io/endlesslaunch/icon.jpeg",
       "version": "1.0.0",
       "address": "Play.mcodyssey.net",
       "minecraftVersion": "1.21",
