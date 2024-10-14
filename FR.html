@@ -23,7 +23,7 @@
             background-size: cover;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Evitar scroll */
+            overflow: hidden;
             color: white;
         }
 
@@ -36,23 +36,41 @@
             background-size: cover;
             position: relative;
             box-sizing: border-box;
-            overflow-y: auto;
+            overflow: hidden;
             border-radius: 10px;
         }
 
-        /* Títulos */
+        /* Contenedor de texto */
+        .text-wrapper {
+            width: 50%; /* Ajuste de ancho más pequeño */
+            margin: 0 auto;
+            position: relative;
+            text-align: center; /* Centrar el texto */
+            overflow: hidden; /* Evitar que se salga de los límites */
+        }
+
+        /* Estilo de animación tipo créditos */
+        .scroll-text {
+            font-size: 18px;
+            line-height: 1.5;
+            position: relative;
+            animation: scroll 60s linear infinite; /* Animación tipo créditos */
+        }
+
+        @keyframes scroll {
+            0% {
+                top: 100%; /* Empieza desde abajo */
+            }
+            100% {
+                top: -100%; /* Se mueve hacia arriba */
+            }
+        }
+
         h1 {
             font-family: 'Minercraftory', sans-serif;
             font-size: 38px;
             color: #FFD700; /* Color dorado */
-            text-align: left;
-        }
-
-        /* Texto del relato */
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-            text-align: justify;
+            text-align: center;
         }
 
     </style>
@@ -61,19 +79,23 @@
 
     <div class="container">
         <h1>Aventure sur le navire</h1>
-        <p>Le joueur ouvre les yeux pour se retrouver sur le pont d'un bateau en bois massif, bercé par les vagues tumultueuses de l'océan infini. Le ciel est teinté d'un orange crépusculaire, annonçant l'arrivée de la nuit. Autour de lui, l'équipage s'active, scrutant l'horizon avec une nervosité palpable.</p>
+        <div class="text-wrapper">
+            <div class="scroll-text">
+                <p>Le joueur ouvre les yeux pour se retrouver sur le pont d'un bateau en bois massif, bercé par les vagues tumultueuses de l'océan infini. Le ciel est teinté d'un orange crépusculaire, annonçant l'arrivée de la nuit. Autour de lui, l'équipage s'active, scrutant l'horizon avec une nervosité palpable.</p>
 
-        <p>Le capitaine, une figure imposante en armure éclatante, se tient à la proue, observant les étoiles naissantes. Soudain, une ombre immense passe au-dessus du navire. Le joueur lève les yeux et aperçoit une forme étrangère et menaçante : une soucoupe volante, scintillant de lumières étranges et pulsantes.</p>
+                <p>Le capitaine, une figure imposante en armure éclatante, se tient à la proue, observant les étoiles naissantes. Soudain, une ombre immense passe au-dessus du navire. Le joueur lève les yeux et aperçoit une forme étrangère et menaçante : une soucoupe volante, scintillant de lumières étranges et pulsantes.</p>
 
-        <p>La soucoupe émet un vrombissement sinistre avant de projeter un rayon de lumière vers le bateau. Une voix résonne dans l'air, autoritaire et mystérieuse, avertissant le joueur d'un danger imminent : "Mortels, préparez-vous. Un péril incommensurable approche."</p>
+                <p>La soucoupe émet un vrombissement sinistre avant de projeter un rayon de lumière vers le bateau. Une voix résonne dans l'air, autoritaire et mystérieuse, avertissant le joueur d'un danger imminent : "Mortels, préparez-vous. Un péril incommensurable approche."</p>
 
-        <p>À cet instant, des boulets de canon enflammés commencent à survoler le bateau, déchirant l'air avec un sifflement strident. L'équipage crie de panique, cherchant désespérément à se mettre à l'abri. Le joueur se précipite vers le capitaine pour le prévenir du danger, mais avant qu'il ne puisse dire un mot, un boulet de canon, plus rapide et plus précis que les autres, se dirige droit vers le capitaine.</p>
+                <p>À cet instant, des boulets de canon enflammés commencent à survoler le bateau, déchirant l'air avec un sifflement strident. L'équipage crie de panique, cherchant désespérément à se mettre à l'abri. Le joueur se précipite vers le capitaine pour le prévenir du danger, mais avant qu'il ne puisse dire un mot, un boulet de canon, plus rapide et plus précis que les autres, se dirige droit vers le capitaine.</p>
 
-        <p>Les secondes semblent s'étirer en une éternité alors que le boulet approche. Le joueur retient son souffle, incapable de détourner le regard. Juste au moment où l'impact semble inévitable, la soucoupe et le capitaine disparaissent dans un éclat éblouissant de lumière bleue, laissant le joueur et l'équipage éberlués et abasourdis.</p>
+                <p>Les secondes semblent s'étirer en une éternité alors que le boulet approche. Le joueur retient son souffle, incapable de détourner le regard. Juste au moment où l'impact semble inévitable, la soucoupe et le capitaine disparaissent dans un éclat éblouissant de lumière bleue, laissant le joueur et l'équipage éberlués et abasourdis.</p>
 
-        <p>Le navire tangue dangereusement alors que les boulets de canon continuent de pleuvoir, mais l'absence du capitaine et la mystérieuse disparition de la soucoupe laissent une sensation de vide oppressant. Le joueur se retrouve seul face à cette nouvelle réalité, déterminé à comprendre ce qu'il vient de se passer et à retrouver le capitaine, convaincu qu'il est l'Élu destiné à changer le cours de leur monde.</p>
+                <p>Le navire tangue dangereusement alors que les boulets de canon continuent de pleuvoir, mais l'absence du capitaine et la mystérieuse disparition de la soucoupe laissent une sensation de vide oppressant. Le joueur se retrouve seul face à cette nouvelle réalité, déterminé à comprendre ce qu'il vient de se passer et à retrouver le capitaine, convaincu qu'il est l'Élu destiné à changer le cours de leur monde.</p>
 
-        <p>Les ténèbres tombent, et l'aventure ne fait que commencer.</p>
+                <p>Les ténèbres tombent, et l'aventure ne fait que commencer.</p>
+            </div>
+        </div>
     </div>
 
 </body>
