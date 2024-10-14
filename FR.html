@@ -1,102 +1,85 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serveur Minecraft - Aventure</title>
+    <title>Relato Minecraft</title>
     <style>
-        /* Fuentes personalizadas */
         @font-face {
             font-family: 'DogicaPixel';
-            src: url('path/to/dogicapixel.woff') format('woff');
+            src: url('DogicaPixel.ttf') format('truetype');
         }
-
         @font-face {
             font-family: 'Minercraftory';
-            src: url('path/to/minercraftory.woff') format('woff');
+            src: url('Minercraftory.ttf') format('truetype');
         }
 
         body {
             font-family: 'DogicaPixel', sans-serif;
             background-color: transparent;
-            background-image: url('path/to/minecraft-map.jpg'); /* Imagen de mapa */
-            background-size: cover;
+            color: white;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            color: white;
         }
 
         .container {
-            width: 1169px;
+            width: 980px;
             height: 552px;
-            margin: 20px auto;
-            padding: 10px 70px;
-            background-color: rgba(100, 100, 100, 0.7); /* Fondo gris con opacidad */
-            background-size: cover;
-            position: relative;
-            box-sizing: border-box;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        /* Contenedor de texto */
-        .text-wrapper {
-            width: 50%; /* Ajuste de ancho más pequeño */
             margin: 0 auto;
             position: relative;
-            text-align: center; /* Centrar el texto */
-            overflow: hidden; /* Evitar que se salga de los límites */
+            background-color: rgba(128, 128, 128, 0.5); /* Rectángulo gris con opacidad */
+            box-sizing: border-box;
+            overflow: hidden; /* Evitar scroll en la pantalla */
         }
 
-        /* Estilo de animación tipo créditos */
-        .scroll-text {
-            font-size: 18px;
+        .scrolling-text {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 100%;
+            animation: scroll 50s linear infinite;
+            text-align: center;
+            font-family: 'DogicaPixel', sans-serif;
+            color: white;
+            font-size: 16px;
             line-height: 1.5;
-            position: relative;
-            animation: scroll 60s linear infinite; /* Animación tipo créditos */
         }
 
         @keyframes scroll {
             0% {
-                top: 100%; /* Empieza desde abajo */
+                top: 100%;
             }
             100% {
-                top: -100%; /* Se mueve hacia arriba */
+                top: -100%;
             }
         }
 
         h1 {
             font-family: 'Minercraftory', sans-serif;
-            font-size: 38px;
-            color: #FFD700; /* Color dorado */
-            text-align: center;
+            color: #fff200;
+            text-shadow: 2px 2px #000;
+            font-size: 32px;
         }
 
+        h2 {
+            font-family: 'Minercraftory', sans-serif;
+            color: white;
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>Aventure sur le navire</h1>
-        <div class="text-wrapper">
-            <div class="scroll-text">
-                <p>Le joueur ouvre les yeux pour se retrouver sur le pont d'un bateau en bois massif, bercé par les vagues tumultueuses de l'océan infini. Le ciel est teinté d'un orange crépusculaire, annonçant l'arrivée de la nuit. Autour de lui, l'équipage s'active, scrutant l'horizon avec une nervosité palpable.</p>
-
-                <p>Le capitaine, une figure imposante en armure éclatante, se tient à la proue, observant les étoiles naissantes. Soudain, une ombre immense passe au-dessus du navire. Le joueur lève les yeux et aperçoit une forme étrangère et menaçante : une soucoupe volante, scintillant de lumières étranges et pulsantes.</p>
-
-                <p>La soucoupe émet un vrombissement sinistre avant de projeter un rayon de lumière vers le bateau. Une voix résonne dans l'air, autoritaire et mystérieuse, avertissant le joueur d'un danger imminent : "Mortels, préparez-vous. Un péril incommensurable approche."</p>
-
-                <p>À cet instant, des boulets de canon enflammés commencent à survoler le bateau, déchirant l'air avec un sifflement strident. L'équipage crie de panique, cherchant désespérément à se mettre à l'abri. Le joueur se précipite vers le capitaine pour le prévenir du danger, mais avant qu'il ne puisse dire un mot, un boulet de canon, plus rapide et plus précis que les autres, se dirige droit vers le capitaine.</p>
-
-                <p>Les secondes semblent s'étirer en une éternité alors que le boulet approche. Le joueur retient son souffle, incapable de détourner le regard. Juste au moment où l'impact semble inévitable, la soucoupe et le capitaine disparaissent dans un éclat éblouissant de lumière bleue, laissant le joueur et l'équipage éberlués et abasourdis.</p>
-
-                <p>Le navire tangue dangereusement alors que les boulets de canon continuent de pleuvoir, mais l'absence du capitaine et la mystérieuse disparition de la soucoupe laissent une sensation de vide oppressant. Le joueur se retrouve seul face à cette nouvelle réalité, déterminé à comprendre ce qu'il vient de se passer et à retrouver le capitaine, convaincu qu'il est l'Élu destiné à changer le cours de leur monde.</p>
-
-                <p>Les ténèbres tombent, et l'aventure ne fait que commencer.</p>
-            </div>
+        <div class="scrolling-text">
+            <h1>El Relato del Jugador</h1>
+            <p>El jugador abre los ojos para encontrarse en el puente de un barco de madera, balanceado por las olas del océano infinito...</p>
+            <p>El cielo es de un naranja crepuscular, anunciando la llegada de la noche. El capitán, una figura imponente, mira hacia las estrellas...</p>
+            <p>De repente, una sombra inmensa pasa sobre el barco, y el jugador ve una nave extraterrestre...</p>
+            <!-- Más párrafos del relato -->
+            <p>La nave desaparece junto con el capitán en un destello de luz azul, dejando al jugador solo con la tripulación en pánico...</p>
+            <h2>La aventura apenas comienza...</h2>
         </div>
     </div>
-
 </body>
 </html>
