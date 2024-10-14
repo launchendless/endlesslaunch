@@ -1,74 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relato Minecraft</title>
+    <title>Minecraft Story</title>
     <style>
         @font-face {
             font-family: 'DogicaPixel';
             src: url('DogicaPixel.ttf') format('truetype');
         }
-        @font-face {
-            font-family: 'Minercraftory';
-            src: url('Minercraftory.ttf') format('truetype');
-        }
 
         body {
-            font-family: 'DogicaPixel', sans-serif;
-            background-color: transparent;
-            color: white;
             margin: 0;
             padding: 0;
             overflow: hidden;
+            background-color: #000; /* Fondo negro para estilo tipo créditos */
+            color: white;
+            font-family: 'DogicaPixel', sans-serif;
         }
 
-        .container {
+        .scroll-container {
             width: 980px;
             height: 552px;
-            margin: 0 auto;
+            overflow: hidden;
             position: relative;
-            box-sizing: border-box;
-            overflow-y: auto; /* Permitir scroll si el texto es largo */
+            margin: 0 auto;
         }
 
-        .text-content {
-            width: 100%;
+        .scroll-text {
             padding: 20px;
-            text-align: center;
-            font-family: 'DogicaPixel', sans-serif;
-            color: white;
-            font-size: 16px;
-            line-height: 1.5;
+            text-align: justify;
+            box-sizing: border-box;
+            white-space: pre-wrap;
+            position: absolute;
+            animation: scrollText 30s linear infinite;
+            overflow-y: hidden;
         }
 
-        h1 {
-            font-family: 'Minercraftory', sans-serif;
-            color: #fff200;
-            text-shadow: 2px 2px #000;
-            font-size: 32px;
-        }
-
-        h2 {
-            font-family: 'Minercraftory', sans-serif;
-            color: white;
-            font-size: 24px;
+        @keyframes scrollText {
+            0% {
+                top: 100%;
+            }
+            100% {
+                top: -100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="text-content">
-            <h1>The Player's Journey</h1>
-            <p>The player opens their eyes to find themselves on the deck of a massive wooden ship being rocked by the tumultuous waves of an endless ocean. The sky is tinged with a twilight orange, signaling the arrival of night. Around them, the crew is bustling, nervously scanning the horizon.</p>
-            <p>The captain, an imposing figure in shining armor, stands at the prow, observing the emerging stars. Suddenly, a massive shadow passes over the ship. The player looks up to see an alien and menacing form: a flying saucer shimmering with strange, pulsating lights.</p>
-            <p>The saucer emits a sinister hum before projecting a beam of light towards the ship. An authoritative and mysterious voice warns the player of imminent danger:</p>
-            <p><em>"Mortals, prepare yourselves. An immeasurable peril approaches."</em></p>
-            <p>At that moment, flaming cannonballs start flying over the ship, tearing through the air with a shrill whistle. The crew screams in panic, desperately seeking shelter. The player rushes to the captain to warn him of the danger, but before they can utter a word, a faster and more precise cannonball heads straight for the captain.</p>
-            <p>Seconds stretch into an eternity as the cannonball approaches. The player holds their breath, unable to look away. Just as the impact seems inevitable, the saucer and the captain disappear in a blinding flash of blue light, leaving the player and the crew stunned and bewildered.</p>
-            <p>The ship dangerously lists as the cannonballs continue to rain down, but the absence of the captain and the mysterious disappearance of the saucer leave an oppressive void. The player finds themselves alone in this new reality, determined to understand what just happened and to find the captain, convinced that they are the Chosen One destined to change the course of their world.</p>
-            <h2>Darkness falls, and the adventure is just beginning...</h2>
-        </div>
+
+<div class="scroll-container">
+    <div class="scroll-text">
+        The player opens their eyes to find themselves on the deck of a massive wooden ship being rocked by the tumultuous waves of an endless ocean. The sky is tinged with a twilight orange, signaling the arrival of night. Around them, the crew is bustling, nervously scanning the horizon. 
+        The captain, an imposing figure in shining armor, stands at the prow, observing the emerging stars. Suddenly, a massive shadow passes over the ship. The player looks up to see an alien and menacing form: a flying saucer shimmering with strange, pulsating lights. 
+        The saucer emits a sinister hum before projecting a beam of light towards the ship. An authoritative and mysterious voice warns the player of imminent danger:
+        "Mortals, prepare yourselves. An immeasurable peril approaches."
+        At that moment, flaming cannonballs start flying over the ship, tearing through the air with a shrill whistle. The crew screams in panic, desperately seeking shelter. The player rushes to the captain to warn him of the danger, but before they can utter a word, a faster and more precise cannonball heads straight for the captain. 
+        Seconds stretch into an eternity as the cannonball approaches. The player holds their breath, unable to look away. Just as the impact seems inevitable, the saucer and the captain disappear in a blinding flash of blue light, leaving the player and the crew stunned and bewildered.
+        The ship dangerously lists as the cannonballs continue to rain down, but the absence of the captain and the mysterious disappearance of the saucer leave an oppressive void. The player finds themselves alone in this new reality, determined to understand what just happened and to find the captain, convinced that they are the Chosen One destined to change the course of their world.
+        Darkness falls, and the adventure is just beginning.
     </div>
+</div>
+
 </body>
 </html>
