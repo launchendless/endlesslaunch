@@ -28,31 +28,18 @@
             height: 552px;
             margin: 0 auto;
             position: relative;
-            background-color: rgba(128, 128, 128, 0.5); /* Rectángulo gris con opacidad */
             box-sizing: border-box;
-            overflow: hidden; /* Evitar scroll en la pantalla */
+            overflow-y: auto; /* Permitir scroll si el texto es largo */
         }
 
-        .scrolling-text {
+        .text-content {
             width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 100%;
-            animation: scroll 50s linear infinite;
+            padding: 20px;
             text-align: center;
             font-family: 'DogicaPixel', sans-serif;
             color: white;
             font-size: 16px;
             line-height: 1.5;
-        }
-
-        @keyframes scroll {
-            0% {
-                top: 100%;
-            }
-            100% {
-                top: -100%;
-            }
         }
 
         h1 {
@@ -71,14 +58,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="scrolling-text">
-            <h1>El Relato del Jugador</h1>
-            <p>El jugador abre los ojos para encontrarse en el puente de un barco de madera, balanceado por las olas del océano infinito...</p>
-            <p>El cielo es de un naranja crepuscular, anunciando la llegada de la noche. El capitán, una figura imponente, mira hacia las estrellas...</p>
-            <p>De repente, una sombra inmensa pasa sobre el barco, y el jugador ve una nave extraterrestre...</p>
-            <!-- Más párrafos del relato -->
-            <p>La nave desaparece junto con el capitán en un destello de luz azul, dejando al jugador solo con la tripulación en pánico...</p>
-            <h2>La aventura apenas comienza...</h2>
+        <div class="text-content">
+            <h1>The Player's Journey</h1>
+            <p>The player opens their eyes to find themselves on the deck of a massive wooden ship being rocked by the tumultuous waves of an endless ocean. The sky is tinged with a twilight orange, signaling the arrival of night. Around them, the crew is bustling, nervously scanning the horizon.</p>
+            <p>The captain, an imposing figure in shining armor, stands at the prow, observing the emerging stars. Suddenly, a massive shadow passes over the ship. The player looks up to see an alien and menacing form: a flying saucer shimmering with strange, pulsating lights.</p>
+            <p>The saucer emits a sinister hum before projecting a beam of light towards the ship. An authoritative and mysterious voice warns the player of imminent danger:</p>
+            <p><em>"Mortals, prepare yourselves. An immeasurable peril approaches."</em></p>
+            <p>At that moment, flaming cannonballs start flying over the ship, tearing through the air with a shrill whistle. The crew screams in panic, desperately seeking shelter. The player rushes to the captain to warn him of the danger, but before they can utter a word, a faster and more precise cannonball heads straight for the captain.</p>
+            <p>Seconds stretch into an eternity as the cannonball approaches. The player holds their breath, unable to look away. Just as the impact seems inevitable, the saucer and the captain disappear in a blinding flash of blue light, leaving the player and the crew stunned and bewildered.</p>
+            <p>The ship dangerously lists as the cannonballs continue to rain down, but the absence of the captain and the mysterious disappearance of the saucer leave an oppressive void. The player finds themselves alone in this new reality, determined to understand what just happened and to find the captain, convinced that they are the Chosen One destined to change the course of their world.</p>
+            <h2>Darkness falls, and the adventure is just beginning...</h2>
         </div>
     </div>
 </body>
